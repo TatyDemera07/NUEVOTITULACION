@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Niños</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-custom {
+            background-color: #005CB9;
+        }
+
+        .text-custom {
+            color: #FF5100;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-custom text-white p-6 text-center">
+        <h1 class="text-3xl font-bold">Catálogo de Ropa de Niño</h1>
+    </header>
+
+    <main class="container mx-auto my-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+            <!-- Camisetas -->
+            <section>
+                <h2 class="text-2xl font-semibold mb-4 text-custom">Camisetas</h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZAo1IkHNYdPyTLufqej-TjvIIKWo29DXcXA&usqp=CAU" alt="Camiseta 1" class="w-full h-auto mb-2 rounded">
+                        <h3 class="text-xl font-bold text-custom">Camiseta</h3>
+                        <p class="text-gray-600">Camiseta casual para niños.</p>
+                        <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Ver más</button>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- Sudaderas -->
+            <section>
+                <h2 class="text-2xl font-semibold mb-4 text-custom">Sudaderas</h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/4e0cd3a4-4d2e-4c4c-ae69-80f1861d6e92/sudadera-con-gorro-sin-cierre-talla-grande-sportswear-club-fleece-SDrRKP.png" alt="Sudadera 1" class="w-full h-auto mb-2 rounded">
+                        <h3 class="text-xl font-bold text-custom">Sudadera</h3>
+                        <p class="text-gray-600">Sudadera cómoda y abrigada para niños.</p>
+                        <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Ver más</button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Pantalones -->
+            <section>
+                <h2 class="text-2xl font-semibold mb-4 text-custom">Pantalones</h2>
+                <div class="space-y-4">
+                    <div class="bg-white p-4 rounded shadow-md">
+                        <img src="data:image/jpeg;base64,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" alt="Pantalón 1" class="w-full h-auto mb-2 rounded">
+                        <h3 class="text-xl font-bold text-custom">Pantalón</h3>
+                        <p class="text-gray-600">Pantalón casual para niños.</p>
+                        <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Ver más</button>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2024 Catálogo de Niño. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+<title>Catálogo de Dama</title>
+<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<style>
+    .bg-custom {
+        background-color:  #005CB9;
+    }
+    .text-custom {
+        color:  #FF5100;
+    }
+</style>
+<body class="bg-gray-100 text-gray-800">
+
+<header class="bg-custom text-white p-6 text-center">
+    <h1 class="text-3xl font-bold">Catálogo de Ropa de Dama</h1>
+</header>
+
+<main class="container mx-auto my-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Vestidos -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-custom">Vestidos</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded shadow-md">
+                    <img src="https://studiofco.vteximg.com.br/arquivos/ids/1523716-4000-4284/-stfco-producto-Vestidos-COMBINADO-S142505-2.jpg?v=638336774782900000" alt="Vestido 1" class="w-full h-auto mb-2 rounded">
+                    <h3 class="text-xl font-bold text-custom">Vestido </h3>
+                    <p class="text-gray-600">Vestido para ocasiones especiales.</p>
+                    <button (click)="redirectToDama('./dama/vestido)" class="mt-4 px-4 py-2 bg-custom-orange text-white rounded hover:bg-orange-600">Ver más..</button>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Faldas -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-custom">Faldas</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded shadow-md">
+                    <img src="https://studiofco.vteximg.com.br/arquivos/ids/1294869-4000-4284/-stfco-producto-Vestidos-BEIGE-S142052-1.jpg?v=637838217733200000" alt="Falda 1" class="w-full h-auto mb-2 rounded">
+                    <h3 class="text-xl font-bold text-custom">Falda </h3>
+                    <p class="text-gray-600">Falda casual para el día a día.</p>
+                    <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Ver más</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blusas -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-custom">Blusas</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded shadow-md">
+                    <img src="https://studiofco.vteximg.com.br/arquivos/ids/1567204-4000-4284/-stfco-producto-Camisasyblusas-NEGRO-S172974A-1.jpg?v=638500092081430000" alt="Blusa 1" class="w-full h-auto mb-2 rounded">
+                    <h3 class="text-xl font-bold text-custom">Blusas</h3>
+                    <p class="text-gray-600">Blusas comodas</p>
+                    <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Ver más</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pantalones -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-custom">Pantalones</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded shadow-md">
+                    <img src="https://studiofco.vteximg.com.br/arquivos/ids/1538495-4000-4284/Camisasyblusas-NEGRO-S174477-1.jpg?v=638398913098700000" alt="Pantalón 1" class="w-full h-auto mb-2 rounded">
+                    <h3 class="text-xl font-bold text-custom">Pantalones </h3>
+                    <p class="text-gray-600">Pantalón clásico a la moda.</p>
+                    <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Ver más</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Accesorios -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-custom">Accesorios</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded shadow-md">
+                    <img src="https://studiofco.vteximg.com.br/arquivos/ids/1573683-4000-4284/-stfco-producto-Bolsosycarteras-NEGRO-S402382-1.jpg?v=638524459678200000" alt="Accesorio 1" class="w-full h-auto mb-2 rounded">
+                    <h3 class="text-xl font-bold text-custom">Accesorios</h3>
+                    <p class="text-gray-600">Accesorios elegantes y prácticos.</p>
+                    <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Ver más</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Ropa Deportiva -->
+        <section>
+            <h2 class="text-2xl font-semibold mb-4 text-custom">Ropa Deportiva</h2>
+            <div class="space-y-4">
+                <div class="bg-white p-4 rounded shadow-md">
+                    <img src="https://studiofco.vteximg.com.br/arquivos/ids/1539708-4000-4284/-stfco-producto-Vestidos-NEGRO-S142672-2.jpg?v=638415526344830000" alt="Ropa Deportiva 1" class="w-full h-auto mb-2 rounded">
+                    <h3 class="text-xl font-bold text-custom">Conjuntos Deportivo</h3>
+                    <p class="text-gray-600">Conjunto deportivo para entrenar cómodamente.</p>
+                    <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Ver más</button>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</main>
+
+<footer class="bg-gray-800 text-white p-4 text-center">
+    <p>&copy; 2024 Catálogo de Dama. Todos los derechos reservados.</p>
+</footer>
+

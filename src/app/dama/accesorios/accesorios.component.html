@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        .bg-custom {
+            background-color: #005CB9;
+        }
+
+        .text-custom {
+            color: #FF5100;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <header class="bg-custom text-white p-6 text-center">
+        <h1 class="text-3xl font-bold">Catálogo de Accesorios</h1>
+    </header>
+
+    <main class="container mx-auto my-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+            <!-- Accesorio 1 -->
+            <div class="bg-white p-4 rounded shadow-md flex">
+                <img src="https://ivannyboutique.com/27593-large_default/collar-paola.jpg" alt="Accesorio 1" class="w-48 h-auto rounded">
+                <div class="ml-4 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold text-custom">Collar Elegante</h2>
+                        <p class="text-gray-600">Collar elegante para ocasiones especiales.</p>
+                        <p class="text-gray-800 font-semibold">Precio: $29.99</p>
+                        <p class="text-gray-800">Colores disponibles: Dorado, Plateado</p>
+                        <ul class="text-gray-800 list-disc list-inside">
+                            <li>Material: Oro</li>
+                            <li>Largo: 45cm</li>
+                        </ul>
+                    </div>
+                    <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Añadir al
+                        Carrito</button>
+                </div>
+            </div>
+
+            <!-- Accesorio 2 -->
+            <div class="bg-white p-4 rounded shadow-md flex">
+                <img src="data:image/jpeg;base64,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" alt="Accesorio 2" class="w-48 h-auto rounded">
+                <div class="ml-4 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold text-custom">Pulsera Casual</h2>
+                        <p class="text-gray-600">Pulsera casual perfecta para el día a día.</p>
+                        <p class="text-gray-800 font-semibold">Precio: $19.99</p>
+                        <p class="text-gray-800">Colores disponibles: Rojo, Azul, Negro</p>
+                        <ul class="text-gray-800 list-disc list-inside">
+                            <li>Material: Cuero</li>
+                            <li>Longitud: Ajustable</li>
+                        </ul>
+                    </div>
+                    <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Añadir al
+                        Carrito</button>
+                </div>
+            </div>
+
+            <!-- Accesorio 3 -->
+            <div class="bg-white p-4 rounded shadow-md flex">
+                <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAogMBIgACEQEDEQH/xAAbAAEAAwEBAQEAAAAAAAAAAAAABAUGAwIBB//EAEMQAAEDAgQDBAYFBw0AAAAAAAEAAgMEEQUSITFBUWETInGBBjJykaGxFFJiwdEjJTM1Y+HwFSQ0QnN0gpKywtLi8f/EABkBAQEBAQEBAAAAAAAAAAAAAAAEAQIDBf/EACURAAICAgEFAAEFAAAAAAAAAAABAhEDITEEEhMyQWEUIiNRgf/aAAwDAQACEQMRAD8A/cUREAREQBERAEREBUYhjkdJUOh7Fz3N3OawWbxetlxKYOL3Rxj1WDgu+MC+Iz+2VBDVVCCSsjyTbdHKBj4XNc2Z926g9VpIPSQgNbNTkm2rmu3VBZfWjXoupRUuTmM3Hg38bg9jXDYi69KNhzs1DAf2YHwUlRlq4CIiGhERAEREAREQBERAEREAREQBfF9USuq/o3ZgML3SPytF7ea5lJRVs1JvSMxiutfP7ZUOwXZ8gqT2rj3nEg68QbFeMrRxV8fVEEvZnOwX0WBXuzfrBfQxl9XW81pya7Cj+boPZUxZrBsYax0dK5hMb53Qtkvo11gdfG9lpVB3KUml8L0moqwiItNCIiAIiIAiIgCIiAIiIAiIgCq6pwfirQT3YY/i4/8AUe9T55mQROlkNmNFyVlziLH1stRZ0jpP0cO1gBa/7zzUvU5Eko/WeuKPLONNgkkzA+8kQeASCePHT3r3JhGGQEmsxV7CNwZWtt8F4mxHtJWxVEozPvkijcWtNt+rvP3KPWTGKkkMTI2BrCQMth7hZUxeeS5pE8liT4O30P0eebR43Y/3lh+a6S4E3s89NVumaRobjXwI0VQyollqWhzmOaY9dSXA8t9lJERp2PqYyIbC73MOS4620PmCt/mq4sysTdNEulp20+H1bAxwlZMZGh25cGMN/eN1sIZWzRMkYQWvaHAjiCsNUVUs8XfH5WMbt0c3x/EaHpsrz0TxKKegioySJadmSx0u0aBRYsjWeUZ6bK5QXjTjwjQovgX1WngEREAREQBERAEREAREQBDsi5VMvY08kp1yNJtzWN0rBmPSueedhbEbQxuDNN5HnQALNwy9pI+JrxlZYSvB9c34fZGoHPXdWGPVbhCGNdYxRXv+0kNgfEDMfNVlJTtaWGMgANaAPDN/yK8OlxuTefmzvPkUUsRYvpm1DGBr8jmOD43jXKR9x2Pip7mXabjxVZJMKGKNhje/VrNCPC5JNgFZUtQyTM0gtc3djtCD1X0NXf0i3/hxjgtNcNA4XsprsO+lSUwkdanif2j47fpHD1b9AdfEBfKKB7XHtCXHmdVZZ44WXeQABdcv9y2dLTIeKYcZ4+1gOSqj9R/A9DzBVNh5zzMqaYGOZriHs+o8bj+NwVeT4hFNmp44u2e5p7jh3T7XT5qjEYwvF6drRaOeIAtvfvsGnvGim6nEs0fytpnvhyPG98M3dJMKiBsgFid28jxC7KvoDknlYPVkaHjx2Pwy/FWCY5d0UzqSp0ERF2YEREAREQBERAEREAUbEBmpHt52HxUlcqlueBw8/cuMiuDNjyj879J2mMz5GOcGzxjK21zZnUjn8F7wWwY58kV2uFjqA5pU/wBIqfNUTaeuxkjbfZu0/wCofBVNMW5jEHtcdzHdenSJLCkePUO8h2gD63EKiBrHMEIGaUt0eDy6r7itPWUjYf5Oax5YNDIDcC+oB5EcDde8KhnbNM6dgDXm9idCros7Vwc8BreAHJezVaZ5p/0UdJjU8sjC1mUSEBzXkXZY2IFuNxxtw0U2sqTT0081QyXJG25yHXyuQpNdQRzQ90Na4cRpZZ3GDWSSxMkP5JrgXdbLIwdbezpzV6RaYJTMjgZUuuHzd4c234HrzVfilZHLX0rQXh8U7CSWECxPA7FSqzG6VlOY4TnncAHPboB1PNVcD3VFVER3uz746kaj3mw8107UW2c67kjaS176OnwyYNa7tGZHX5dmXf7Vb4XVSVdGyaWHsnOJ7t73ANgfPdQ58KhrIaenmc+0DRlc02INst/ddWVLTx01PHDHfKwWFzcr5mGORTbfqXTce38nZERVnkEREAREQBERAEREAXw7L6h2QGQx50zMUjilZG2FrC6N1zeQHRw6W0+BVRSYc9uJGbM3s3EkN8Wgbc9N+tltsXoBX02QODZW3MbyL2NlkG1BoZjDURuZkdYtOrm/a9n+NNlPB+KdPg7lHyRtclzDTtY0OfYDqvTz3ragk6+HJQZn/TauCV72fRadudrWm+eXYE9Gjbqb8Aus1SI4ZJi1zgxpdlbubDYK7uvfwlca0T423FlCr6NsoPdXXC6mSenzVEYjna7LLGNmHQ2vx0O+l+QXDEiYauCrjcNPyczSbXYdQfFp18C5O/Vodu6Zl8TwxzLOYBoRcZev/qlYZ+bYW1JY2WZ/ejjN9Wj8ToPvU+uljFnTWa3SzHGxd1PIKzwHC5KmZlbWh2RtnRxuGheLjPbgLbDzU+fJ3Nwi+T2w46XdI0VKHGIPe3K5wBLb3tpsuyAL6tSpUaERFoCIiAIiIAiIgCIiAIiIBYLPeklDDURyuy3mEZy2sCdNtfBaFZL0+qXUEFLVAHJnMb7ddR8ipurvxWvh64fcz00OIYREx745BFIA8TRDO2zvrsGvE3Nj4jZcxjEMx7rqSV2o7rw1wHUa79bKwjq8QrIIJHzNY0RtDQ1g0FlGq6A1f9K7CfpLTxv+YVEenajcWeMs8bpo+09dkh/m1LdjLO7OOYbk9GjXxUntaue4ZDbUtdZ1iNN7nrwHJV8OFtpxaBsEQve0dOxuvPQKU0VjRZtT742p+myPTlo588FtRLbAcJp5nyVVVZ8jCGuAFmkixuR/WO2p4gFa2JuWNo5BYn0YxGZ9VLh8jC6b6QWueBplDQbnyW6U+BLulXx0e822k39CIipPMIiIAiIgCIiAIiIAiIgCIiALjU08NTE6KojbJG7drhcFdkWNWDBV7RDVyxRANjY4ta0bAA7LgHHmpWL6YjUf2jvmoYV0XpEEuWe8xX0OPNeAvTVphsMEpoWUbJmRtbJJq9wGpO33BWag4N+rIPZ+9TlE0k3RfHhBERYaEREAREQBERAEREAREQBERAERfEBh8bFsSnH2yVBVl6RMy4nKRs6x+CrArY+qIZ+zPYXoLy1ewtOTaYP+rIPA/NTlDwkBuHwNvrlUxRS5ZdHhBERYdBERAEREAREQBERAEREAREQBeXC6IgM9i9BDNVFzswNtwVVvwuK+k04/xD8ERe8W6J2lYZhUTjYzT/5/3KVFhFNm1Mrrc5CiJbMpGkooWR08YYLADmpKIvF8lKCIiwBERAEREAREQH//2Q==" alt="Accesorio 3" class="w-48 h-auto rounded">
+                <div class="ml-4 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold text-custom">Reloj de Noche</h2>
+                        <p class="text-gray-600">Reloj perfecto para eventos nocturnos.</p>
+                        <p class="text-gray-800 font-semibold">Precio: $99.99</p>
+                        <p class="text-gray-800">Colores disponibles: Negro, Dorado</p>
+                        <ul class="text-gray-800 list-disc list-inside">
+                            <li>Material: Acero inoxidable</li>
+                            <li>Resistencia al agua: 50m</li>
+                        </ul>
+                    </div>
+                    <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Añadir al
+                        Carrito</button>
+                </div>
+            </div>
+
+            <!-- Accesorio 4 -->
+            <div class="bg-white p-4 rounded shadow-md flex">
+                <img src="https://gmo.com.ec/media/catalog/product/cache/33b9d864c7a8ca43504665713fe676d6/0/v/0vo5460s__2339t5_000a_sqrd1irmqz9aezme.jpg" alt="Accesorio 4" class="w-48 h-auto rounded">
+                <div class="ml-4 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold text-custom">Gafas de Sol</h2>
+                        <p class="text-gray-600">Gafas ligeras para los días de verano.</p>
+                        <p class="text-gray-800 font-semibold">Precio: $49.99</p>
+                        <p class="text-gray-800">Colores disponibles: Negro, Marrón</p>
+                        <ul class="text-gray-800 list-disc list-inside">
+                            <li>Material: Plástico</li>
+                            <li>Protección UV: 400</li>
+                        </ul>
+                    </div>
+                    <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Añadir al
+                        Carrito</button>
+                </div>
+            </div>
+
+            <!-- Accesorio 5 -->
+            <div class="bg-white p-4 rounded shadow-md flex">
+                <img src="data:image/jpeg;base64,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" alt="Accesorio 5" class="w-48 h-auto rounded">
+                <div class="ml-4 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold text-custom">Bolso de Mano</h2>
+                        <p class="text-gray-600">Bolso elegante para ocasiones especiales.</p>
+                        <p class="text-gray-800 font-semibold">Precio: $79.99</p>
+                        <p class="text-gray-800">Colores disponibles: Negro, Rojo</p>
+                        <ul class="text-gray-800 list-disc list-inside">
+                            <li>Material: Cuero</li>
+                            <li>Tamaño: Mediano</li>
+                        </ul>
+                    </div>
+                    <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Añadir al
+                        Carrito</button>
+                </div>
+            </div>
+
+            <!-- Accesorio 6 -->
+            <div class="bg-white p-4 rounded shadow-md flex">
+                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRtt5odZvrGURB7Fi-AQfq7VTfud6sifSurXjy_jkb2LY34JX4vWUpn2lmL-gd3G42_FwPB6yiSoIiQ9IEDpOhe17myPnr_7bOocw0cUnV6oXxiuEIuycyJXvBo1x1c1w7fIKMzZ0E&usqp=CAc" alt="Accesorio 6" class="w-48 h-auto rounded">
+                <div class="ml-4 flex flex-col justify-between">
+                    <div>
+                        <h2 class="text-2xl font-bold text-custom">Sombrero de Playa</h2>
+                        <p class="text-gray-600">Sombrero ligero para los días de verano.</p>
+                        <p class="text-gray-800 font-semibold">Precio: $24.99</p>
+                        <p class="text-gray-800">Colores disponibles: Beige, Blanco</p>
+                        <ul class="text-gray-800 list-disc list-inside">
+                            <li>Material: Paja</li>
+                            <li>Tamaño: Ajustable</li>
+                        </ul>
+                    </div>
+                    <button class="mt-4 bg-custom text-white py-2 px-4 rounded hover:bg-orange-600">Añadir al
+                        Carrito</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-gray-800 text-white p-4 text-center">
+        <p>&copy; 2024 Catálogo de Dama. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const buttons = document.querySelectorAll('button');
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    alert('Producto añadido al carrito');
+                    // Aquí puedes añadir el código para agregar el producto al carrito
+                    // o redirigir al carrito de compras.
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
