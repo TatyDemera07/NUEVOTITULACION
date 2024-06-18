@@ -9,8 +9,9 @@ export const routes: Routes = [
   { path: 'dama', component: DamaComponent },
   { path: 'caballero', component: CaballeroComponent },
   { path: 'children', component: ChildrenComponent },
-  {path: 'vestido', component: VestidoComponent},
-  { path: '', redirectTo: './dama/vestido', pathMatch: 'full'},
+  { path: 'dama/vestido', component: VestidoComponent },
+  { path: '', redirectTo: '/dama', pathMatch: 'full' }, 
+  { path: '**', redirectTo: '/dama' }
 ];
 
 @NgModule({

@@ -8,7 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './dama.component.css'
 })
 export class DamaComponent {
-  redirectToDama() {
+  redirectToVestido() {
     throw new Error('Method not implemented.');
     }
     [x: string]: any;

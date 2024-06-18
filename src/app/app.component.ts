@@ -11,6 +11,7 @@ import { initFlowbite } from 'flowbite';
     imports: [RouterOutlet, CommonModule, RouterLink]
 })
 export class AppComponent {
+[x: string]: any;
         constructor(private router: Router) {}
       
         redirectToDama(path: string) {
